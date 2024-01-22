@@ -13,12 +13,13 @@
     </div>
     <div class="main-content">
         <div class="table-container">
-            <table>
-                <tr>
+            <table class="book-table">
+                <tr class="header-row">
                     <th>Title</th>
                     <th>Author</th>
                     <th>Pages</th>
                     <th>Has it been read?</th>
+                    <th></th>
                 </tr>
                 <!-- Tables inserted here -->
             </table>
@@ -32,19 +33,19 @@
             <section class="form-inputs">
                 <div class="input-container">
                     <label for="title">Title</label>
-                    <input name="title" type="text">
+                    <input name="title" type="text" required>
                 </div>
                 <div class="input-container">
                     <label for="author">Author</label>
-                    <input name="author" type="text" pattern="^[a-zA-Z ]+$">
+                    <input name="author" type="text" pattern="^[a-zA-Z ]+$" required>
                 </div>
                 <div class="input-container">
                     <label for="pages">Pages</label>
-                    <input name="pages" type="number">
+                    <input name="pages" type="number" required>
                 </div>
                 <div class="input-container">
                     <label for="read">Have you read it?</label>
-                    <select name="read">
+                    <select name="read" required>
                         <option value="true">Yes</option>
                         <option value="false">No</option>
                     </select>

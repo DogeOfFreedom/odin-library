@@ -41,16 +41,30 @@ body {
 }
 
 table {
-    background-color: black;
     flex: auto;
-    align-self: flex-start;
+    padding: 0px;
+    border-collapse: collapse;
+}
+
+.header-row {
+    border: 0px;
+}
+
+table tr {
+    border-top: 1px solid black;
 }
 
 td, th {
     background-color: white;
     text-align: center;
     padding: 10px 0px;
-    font-size: 20px; 
+    font-size: 20px;
+}
+
+.last-row-cell {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 
 .button-container {
@@ -62,16 +76,21 @@ td, th {
 button {
     background-color: white;
     border: 1px solid black;
-    padding: 20px;
-    font-size: 30px;
     border-radius: 20px;
     font-family: Gellisto;
+    padding: 20px;
+    font-size: 30px; 
 }
 
 button:active {
     background-color: rgb(61, 61, 61);
     color: white;
     box-shadow: inset 2px 2px 3px black;
+}
+
+.book-option-btn {
+    font-size: 16px;
+    padding: 5px 10px;
 }
 
 dialog {
