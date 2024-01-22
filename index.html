@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>Library</title>
 </head>
 <body>
@@ -25,7 +25,36 @@
         </div>
     </div>
     <div class="button-container">
-        <button>NEW BOOK</button>
+        <button class="add-book-btn">NEW BOOK</button>
     </div>
+    <dialog>
+        <form>
+            <section class="form-inputs">
+                <div class="input-container">
+                    <label for="title">Title</label>
+                    <input name="title" type="text">
+                </div>
+                <div class="input-container">
+                    <label for="author">Author</label>
+                    <input name="author" type="text" pattern="^[a-zA-Z ]+$">
+                </div>
+                <div class="input-container">
+                    <label for="pages">Pages</label>
+                    <input name="pages" type="number">
+                </div>
+                <div class="input-container">
+                    <label for="read">Have you read it?</label>
+                    <select name="read">
+                        <option value="true">Yes</option>
+                        <option value="false">No</option>
+                    </select>
+                </div> 
+            </section>
+            <section class="form-buttons">
+                <button class="cancel-btn" type="button" formmethod="dialog">Cancel</button>
+                <button class="submit-btn" type="none">Submit</button>
+            </section>
+        </form>
+    </dialog>
 </body>
 </html>
