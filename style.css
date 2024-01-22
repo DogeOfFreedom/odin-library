@@ -1,0 +1,71 @@
+@font-face {
+    font-family: Gellisto;
+    src: url("fonts/Gellisto.ttf");
+}
+
+body {
+    background-color: #F1FAEE;
+    font-family: Gellisto;
+}
+
+body div {
+    margin-bottom: 50px;
+}
+
+.header {
+    height: 10vh;
+}
+
+.page-title
+ {
+    font-size: 100px;
+    text-align: center;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table-container {
+    background-color: white;
+    width: 90%;
+    box-shadow: 1px 2px 3px #83987C;
+    border-radius: 15px;
+    border: 3px solid black;
+    display: flex;
+    padding: 25px 30px;
+    box-sizing: border-box;
+}
+
+table {
+    background-color: black;
+    flex: auto;
+    align-self: flex-start;
+}
+
+td, th {
+    background-color: white;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background-color: white;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 20px;
+    font-family: Gellisto;
+}
+
+button:active {
+    background-color: rgb(61, 61, 61);
+    color: white;
+    box-shadow: inset 2px 2px 3px black;
+}
