@@ -60,6 +60,8 @@ function createNewBookEntry(attributes) {
     const delete_book_btn = document.createElement("button");
     delete_book_btn.classList.add("book-option-btn");
     delete_book_btn.textContent = "Delete";
+    delete_book_btn.style.backgroundColor = "red";
+    delete_book_btn.style.color = "white";
     new_cell.appendChild(change_read_status_btn);
     new_cell.appendChild(delete_book_btn);
     new_book_row.appendChild(new_cell);
@@ -83,11 +85,10 @@ submit_btn.addEventListener("click", (e) => {
     let author = document.querySelector("input[name='author']").value;
     let pages = document.querySelector("input[name='pages']").value;
     let read = document.querySelector("select[name='read']").value;
+    read = read ? "yes" : "no";
     const new_row = createNewBookEntry([title, author, pages, read]);
     book_table.appendChild(new_row);
     dialog.close();
 })
-
-const 
 
 populateBookTable();
