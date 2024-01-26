@@ -1,12 +1,14 @@
-function Book(title, author, pages, read) {
-    this.author = author;
-    this.title = title;
-    this.pages = pages;
-    this.read = read;
-}
+class Book {
+    constructor(title, author, pages, read) {
+        this.author = author;
+        this.title = title;
+        this.pages = pages;
+        this.read = read;
+    }
 
-Book.prototype.changeReadStatus = function() {
-    this.read = this.read == "no" ? "no" : "yes";
+    changeReadStatus() {
+        this.read = this.read == "no" ? "no" : "yes";
+    }
 }
 
 let myLibrary = [];
