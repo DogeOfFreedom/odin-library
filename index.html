@@ -1,61 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
     <title>Library</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="header">
-        <h1 class="page-title">Library</h1>
+      <h1 class="page-title">Library</h1>
     </div>
     <div class="main-content">
-        <div class="table-container">
-            <table class="book-table">
-                <tr class="header-row">
-                    <th>Title</th>
-                    <th>Author</th>
-                    <th>Pages</th>
-                    <th>Read?</th>
-                    <th></th>
-                </tr>
-                <!-- Tables inserted here -->
-            </table>
-        </div>
+      <div class="table-container">
+        <table class="book-table">
+          <tr class="header-row">
+            <th>Title</th>
+            <th>Author</th>
+            <th>Pages</th>
+            <th>Read?</th>
+            <th></th>
+          </tr>
+          <!-- Tables inserted here -->
+        </table>
+      </div>
     </div>
     <div class="button-container">
-        <button class="add-book-btn">NEW BOOK</button>
+      <button class="add-book-btn">NEW BOOK</button>
     </div>
     <dialog>
-        <form>
-            <section class="form-inputs">
-                <div class="input-container">
-                    <label for="title">Title</label>
-                    <input name="title" type="text" required>
-                </div>
-                <div class="input-container">
-                    <label for="author">Author</label>
-                    <input name="author" type="text" pattern="^[a-zA-Z ]+$" required>
-                </div>
-                <div class="input-container">
-                    <label for="pages">Pages</label>
-                    <input name="pages" type="number" required>
-                </div>
-                <div class="input-container">
-                    <label for="read">Have you read it?</label>
-                    <select name="read" required>
-                        <option value="yes">Yes</option>
-                        <option value="no">No</option>
-                    </select>
-                </div> 
-            </section>
-            <section class="form-buttons">
-                <button class="cancel-btn" type="button" formmethod="dialog">Cancel</button>
-                <button class="submit-btn" type="none">Submit</button>
-            </section>
-        </form>
+      <form>
+        <section class="form-inputs">
+          <div class="input-container">
+            <label for="title">Title</label>
+            <input name="title" type="text" required />
+          </div>
+          <div class="input-container">
+            <label for="author">Author</label>
+            <input name="author" type="text" pattern="^[a-zA-Z ]+$" required />
+          </div>
+          <div class="input-container">
+            <label for="pages">Pages</label>
+            <input name="pages" type="number" required />
+          </div>
+          <div class="input-container">
+            <label for="read">Have you read it?</label>
+            <select name="read" required>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+        </section>
+        <section class="form-buttons">
+          <button class="cancel-btn" type="button" formmethod="dialog">
+            Cancel
+          </button>
+          <button class="submit-btn" type="submit">Submit</button>
+        </section>
+      </form>
     </dialog>
-</body>
+  </body>
 </html>
